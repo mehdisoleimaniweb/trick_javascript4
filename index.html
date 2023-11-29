@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/bootstrap.min.css">
+    <link rel="stylesheet" href="src/sass.css">
+    <title>Document</title>
+</head>
+<body>
+    <main id="main">
+        <div class="mouse"></div>
+        <figure id="fig" onmousemove="para(event)">
+            <img src="img/dog.jpg" alt="">
+            <div>
+                <h1>dog</h1>
+                <p>publisher</p>
+            </div>
+        </figure>
+    </main>
+    <script>
+        let _mouse=document.getElementsByClassName('mouse')[0]
+        document.getElementById('main').addEventListener('mousemove',(e)=>{
+            let x=e.clientX
+            let y=e.clientY
+
+            _mouse.style.top=y+'px'
+            _mouse.style.left=x+'px'
+        })
+        let fig=document.getElementById('fig')
+        function para(e){
+            let x = ((e.offsetX)/10)-20
+            let y = ((e.offsetY)/10)-25
+            fig.style.transform='perspective(600px) rotateX('+x+'deg)rotateY('+y+'deg)'
+        }
+    </script>
+</body>
+</html>

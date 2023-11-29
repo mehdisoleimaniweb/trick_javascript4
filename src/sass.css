@@ -1,0 +1,63 @@
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(0deg, rgb(34, 193, 195) 0%, rgb(34, 227, 228) 0%, rgb(45, 253, 233) 0%, rgb(9, 231, 240) 2%, rgb(45, 253, 247) 15%, rgb(0, 129, 255) 100%, rgba(21, 120, 218, 0.8183648459) 100%, rgb(29, 30, 31) 100%, rgba(29, 30, 31, 0.8183648459) 100%);
+  height: 100vh;
+  cursor: none;
+}
+#main figure {
+  width: 400px;
+  height: 550px;
+  position: relative;
+  perspective: 800px;
+  transition: 0.4s;
+}
+#main figure img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#main figure div {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 80%;
+  height: 80%;
+  background-color: rgba(255, 255, 255, 0.137);
+}
+#main figure div h1 {
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  margin-top: 300px;
+  text-transform: uppercase;
+}
+#main figure div p {
+  font-size: 20px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: white;
+  text-transform: uppercase;
+}
+#main .mouse {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0.274);
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}/*# sourceMappingURL=sass.css.map */

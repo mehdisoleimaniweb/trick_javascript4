@@ -3,7 +3,7 @@
 
 ![viewfinal](https://s6.uupload.ir/files/screenshot_(76)_rv5c.png)
 
-- 📌[Demo Project](https://mehdisoleimaniweb.github.io/trick-javascript/)
+- 📌[Demo Project](https://mehdisoleimaniweb.github.io/trick_javascript4/)
 
 - Developed by mehdi soleimani
 
